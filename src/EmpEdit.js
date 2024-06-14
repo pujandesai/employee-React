@@ -5,7 +5,7 @@ const EmpEdit = () => {
   const { empid } = useParams();
 
   useEffect(() => {
-    fetch("http://https://employee-node-alpha.vercel.app/api/employee/" + empid)
+    fetch("https://employee-node-alpha.vercel.app/api/employee/" + empid)
       .then((res) => res.json())
       .then((resp) => {
         console.log(resp);
@@ -46,7 +46,7 @@ const EmpEdit = () => {
       isRemove: !active, // Ensure the isRemove value is inverted before sending
     };
 
-    fetch("http://https://employee-node-alpha.vercel.app/api/employee/" + empid, {
+    fetch("https://employee-node-alpha.vercel.app/api/employee/" + empid, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(empdata),

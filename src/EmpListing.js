@@ -13,7 +13,7 @@ const EmpListing = () => {
   };
   const Removefunction = (id) => {
     if (window.confirm("Do you want to remove?")) {
-      fetch("http://https://employee-node-alpha.vercel.app/api/employee/delete/" + id, {
+      fetch("https://employee-node-alpha.vercel.app/api/employee/delete/" + id, {
         method: "PUT",
       })
         .then((res) => {
@@ -27,7 +27,7 @@ const EmpListing = () => {
   };
 
   useEffect(() => {
-    fetch("http://https://employee-node-alpha.vercel.app/api/employee")
+    fetch("https://employee-node-alpha.vercel.app/api/employee")
       .then((res) => {
         return res.json();
       })

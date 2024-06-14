@@ -27,7 +27,7 @@ const EmpCreate = () => {
       salary,
     };
 
-    fetch("http://https://employee-node-alpha.vercel.app/api/employee/create", {
+    fetch("https://employee-node-alpha.vercel.app/api/employee/create", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(empdata),

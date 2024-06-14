@@ -7,7 +7,7 @@ const EmpDetail = () => {
   const [empdata, empdatachange] = useState({});
 
   useEffect(() => {
-    fetch("http://https://employee-node-alpha.vercel.app/api/employee/" + empid)
+    fetch("https://employee-node-alpha.vercel.app/api/employee/" + empid)
       .then((res) => {
         return res.json();
       })

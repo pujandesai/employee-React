@@ -57,6 +57,7 @@ const EmpListing = () => {
           <table className="table table-bordered">
             <thead className="bg-dark text-white">
               <tr>
+                <td>Employee Id</td>
                 <td>Name</td>
                 <td>Email</td>
                 <td>Department</td>

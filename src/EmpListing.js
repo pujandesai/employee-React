@@ -70,7 +70,7 @@ const EmpListing = () => {
               {empdata &&
                 empdata.map((item) => (
                   <tr key={item.id}>
-                    <td>{item.employee._id}</td>
+                    <td>{item.employee_id}</td>
                     <td>{item.name}</td>
                     <td>{item.email}</td>
                     <td>{item.department}</td>

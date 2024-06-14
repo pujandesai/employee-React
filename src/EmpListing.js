@@ -27,11 +27,13 @@ const EmpListing = () => {
   };
 
   useEffect(() => {
-    fetch("https://employee-node-alpha.vercel.app/api/employee")
+    // fetch("https://employee-node-alpha.vercel.app/api/employee")
+    fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=21.2238336,72.8334336&radius=5000&key=AIzaSyD411EtreduCQZ14azJpb8MtMQwBxWzNho")
       .then((res) => {
         return res.json();
       })
       .then((resp) => {
+
         const formattedData = resp.map((item) => ({
           ...item,
           hire_date: new Date(item.hire_date).toLocaleString(),
